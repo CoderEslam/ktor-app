@@ -26,6 +26,7 @@ fun Application.configureRouting() {
             call.respondText("Hello World!")
         }
 
+        // sent parameter in link
         get("/notes/{page}"){
             var pageNum = call.parameters["page"]
 //            call.respond("")
