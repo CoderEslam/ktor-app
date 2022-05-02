@@ -25,6 +25,15 @@ fun Application.configureRouting() {
 
             call.respondText("Hello World!")
         }
+
+        get("/notes/{page}"){
+            var pageNum = call.parameters["page"]
+//            call.respond("")
+
+            //or
+
+            call.respondText { "you are on page Number :$pageNum" }
+        }
     }
 
 
